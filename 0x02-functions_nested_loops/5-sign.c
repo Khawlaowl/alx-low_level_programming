@@ -1,6 +1,3 @@
-5-sign.c CODE
-
-
 #include "main.h"
 
 
@@ -26,4 +23,5 @@
 			_putchar('-');
 		}
 			return (-1);
+	
 	}

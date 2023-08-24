@@ -8,15 +8,13 @@ int main(void)
 
   a[2] = 1024;
   p = &n;
-/*
- * Write a single line of code here that meets the following requirements:
- * - You cannot use variable 'a'.
- * - You cannot modify pointer 'p'.
- * - You must use only one statement.
- * - You cannot code anything else other than this line of code.
- *\
- *(p + 5) = 98;
- /* ...so that this prints 98\n */
+  /*
+   * Corrected line of code:
+   * Assign the value 98 to the memory location pointed to by p + 5.
+   * This effectively modifies the value of a[2].
+   */
+  *(p + 5) = 98;
+
   printf("a[2] = %d\n", a[2]);
   return (0);
 }

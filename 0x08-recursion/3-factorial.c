@@ -2,7 +2,6 @@
 /**
  * factorial - returns the factorial of a number
  * @n: The number for which factorial is calculated.
- *
  * Return: The factorial of n.
  */
 int factorial(int n)

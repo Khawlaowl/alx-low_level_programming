@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * betty_puts_recursion - Prints a string to the standard output using recursion.
+ * betty_puts_recursion - Prints a string to the standard output
  * @s: The string to be printed.
+ * void _puts_recursion(char *s)
  *
- * Description: This function recursively prints the specified string to the standard output.
  * Return: Always 0 (Success).
  */
 void _puts_recursion(char *s)

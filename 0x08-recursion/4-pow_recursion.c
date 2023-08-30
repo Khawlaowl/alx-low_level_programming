@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * betty_pow_recursion - Calculates the value of x raised to the power of y.
+ * _pow_recursion - returns the value of x raised to the power of y
  * @x: The base value.
  * @y: The exponent.
  *  Description: This function calculates the natural square root of the input number

@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _memset - fill a block of memory with a specific value
+ * _puts_recursion - function like puts();
  * @s: The string to be printed.
- * void _puts_recursion(char *s)
  *
  * Return: Always 0 (Success).
  */

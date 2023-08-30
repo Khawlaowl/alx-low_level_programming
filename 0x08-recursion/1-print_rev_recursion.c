@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * betty_print_rev_recursion - Displays a string in reverse
+ * _print_rev_recursion - Prints a string in reverse.
  * @s: The string to be reversed and printed
  *
  * Description: This function takes a string

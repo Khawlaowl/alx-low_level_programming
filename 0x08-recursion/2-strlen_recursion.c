@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * betty_strlen_recursion - Calculates the length of a string.
+ *  _strlen_recursion - Returns the length of a string.
+
  * @s: The str
  * ing to be evaluated
  * Description: This function calculates the factorial of the given number using recursion.

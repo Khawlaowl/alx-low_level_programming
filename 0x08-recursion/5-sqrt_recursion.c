@@ -3,6 +3,7 @@ int actual_sqrt_recursion(int n, int i);
 /**
  * betty_sqrt_recursion - Computes the natural square root of a number.
  * @n: The number for which to calculate the square root.
+ * Description: This function determines whether the given number is prime or not.
  *
  * Return: The calculated square root.
  */
@@ -17,6 +18,7 @@ int _sqrt_recursion(int n)
  * square root of a number.
  * @n: The number for which to calculate the square root.
  * @i: An iterator used in the recursion.
+ * Description: This function determines whether the given number is prime or not.
  *
  * Return: The calculated square root.
  */

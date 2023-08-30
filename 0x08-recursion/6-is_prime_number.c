@@ -17,6 +17,7 @@ int is_prime_number(int n)
  * betty_actual_prime - Recursively determines if a number is prime.
  * @n: The number to be evaluated.
  * @i: An iterator used in the recursion.
+ * Description: This function checks whether the input string is a palindrome or not. 
  *
  * Return: 1 if n is prime, 0 if it is not.
  */

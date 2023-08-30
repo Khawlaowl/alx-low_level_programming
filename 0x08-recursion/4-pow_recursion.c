@@ -4,6 +4,8 @@
  * betty_pow_recursion - Calculates the value of x raised to the power of y.
  * @x: The base value.
  * @y: The exponent.
+ *  Description: This function calculates the natural square root of the input number
+ * using recursion. 
  *
  * Return: The result of x raised to the power of y.
  */

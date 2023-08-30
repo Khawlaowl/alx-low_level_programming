@@ -1,15 +1,19 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * betty_putchar - Displays a character on the screen
- * @c: The character to be displayed
+ * betty_puts_recursion - Prints a string to the standard output using recursion.
+ * @s: The string to be printed.
  *
- * Description: This function prints a character to the standard output.
- * Return: On success, it returns 1. On error, -1 is returned and errno
- * is set accordingly.
+ * Description: This function recursively prints the specified string to the standard output.
+ * Return: Always 0 (Success).
  */
-int _putchar(char c)
+void _puts_recursion(char *s)
 {
-	return (write(1, &c, 1));
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+
+	else
+		_putchar('\n');
 }

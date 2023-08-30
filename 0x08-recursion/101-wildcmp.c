@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * betty_wildcmp - Compares two strings.
+ * wildcmp - Compare strings
  * @s1: Pointer to the first string parameter.
  * @s2: Pointer to the second string parameter.
- * Description: This function compares two strings, considering wildcard characters 
  *
  * Return: 0.
  */

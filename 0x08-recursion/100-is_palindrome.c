@@ -2,7 +2,7 @@
 int check_pal(char *s, int i, int len);
 int _strlen_recursion(char *s);
 /**
- * betty_is_palindrome - Determines if a string is a palindrome.
+ * is_palindrome - checks if a string is a palindrome
  * @s: The string to be checked.
  *
  * Return: 1 if the string is a palindrome, 0 if it is not.
@@ -14,9 +14,8 @@ int is_palindrome(char *s)
 	return (check_pal(s, 0, _strlen_recursion(s)));
 }
 /**
- * betty_strlen_recursion - Computes the length of a string.
+ *  _strlen_recursion - returns the length of a string
  * @s: The string to calculate the length of.
- * Description: This function calculates and returns the length of the input string 
  *
  * Return: The length of the string.
  */
@@ -27,12 +26,11 @@ int _strlen_recursion(char *s)
 	return (1 + _strlen_recursion(s + 1));
 }
 /**
- * betty_check_pal - Recursively checks characters for palindrome.
+ * check_pal - checks the characters recursively for palindrome
  * @s: The string to be checked.
  * @i: An iterator used in the recursion.
  * @len: The length of the string.
  *
- * Description: This function recursively checks whether the characters in the
  * Return: 1 if the string is a palindrome, 0 if it is not.
  */
 int check_pal(char *s, int i, int len)

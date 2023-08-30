@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * betty_puts_recursion - Prints a string to the standard output
+ * _memset - fill a block of memory with a specific value
  * @s: The string to be printed.
  * void _puts_recursion(char *s)
  *

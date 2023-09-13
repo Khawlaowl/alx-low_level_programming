@@ -1,8 +1,8 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
- * get_op_func - Selects the correct function to perform
- * the operation asked by the user.
+ * get_op_func - fnct selects the correct fnctn to perform
+ * operation asked by the user.
  * @s: char operator.
  *
  * Return: pointer to fnct corresponding

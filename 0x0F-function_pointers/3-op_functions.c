@@ -29,7 +29,7 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 /**
- * op_mul -  fnct Returns product of two numbers.
+ * op_mul - fnct Returns product of two numbers.
  * @a: first number.
  * @b: second number.
  *
@@ -52,10 +52,10 @@ int op_div(int a, int b)
 }
 /**
  * op_mod - fnct returns remainder of the division of two numbers.
- * @a: first number.
- * @b: second number.
+ * @a: 1 nmbr
+ * @b: 2 nmbr
  *
- * Return: remainder of the division of a by b.
+ * Return: remainder of division of a by b.
  */
 int op_mod(int a, int b)
 {

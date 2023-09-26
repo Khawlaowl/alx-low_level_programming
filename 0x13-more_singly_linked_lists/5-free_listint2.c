@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * free_listint2 - fnct Frees and sets the head to NULL.
  * @head: A pointer to a pointer to the head

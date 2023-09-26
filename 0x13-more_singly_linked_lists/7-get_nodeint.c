@@ -4,6 +4,7 @@
 /**
  * *get_nodeint_at_index - fnct that return nth node
  * @head: A pointer to a pointer to the head of the list.
+ * @index: unsigned int
  *
  * Return: returns the nth node of a listint_t linked list.
  */

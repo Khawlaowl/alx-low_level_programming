@@ -2,45 +2,44 @@
 #include <stdio.h>
 
 /**
- * insert_nodeint_at_index - fnct to Inserts a new node at a given position
- * @head: A pointer to a pointer
- * @idx: The index at which to insert the node
- * @n: The data to be stored in the node.
+ * insert_nodeint_at_index - fnct inserts a new node in a linked list
+ * @head: pntr
+ * @idx: index
+ * @n: data
  *
- * Return: The address of the node
+ * Return: pntr
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *n_node, c_node;
-	unsigned int h = 0;
+	unsigned int m;
+	listint_t *new;
+	listint_t *tmp = *head;
 
-	if (!head)
+	new = malloc(sizeof(listint_t));
+	if (!new || !head)
 		return (NULL);
-	n_node = malloc(sizeof(unsigned int));
-	if (n_node == NULL)
-		return (NULL);
-	n_node->n = n;
+
+	new->n = n;
+	new->next = NULL;
 
 	if (idx == 0)
 	{
-	n_node->next = *head;
-	*head = n_node;
-	return (n_node);
+		new->next = *head;
+		*head = new;
+		return (new);
 	}
 
-	c_node = *head;
-	while (c_node != NULL)
+	for (m = 0; tmp && m < idx; m++)
 	{
-	if (h == idx - 1)
-	{
-	n_node->next = c_node->next;
-	c_node->next = n_node;
-	return (n_node);
-	}
-	c_node = c_node->next;
-	h++;
+		if (m == idx - 1)
+		{
+			new->next = tmp->next;
+			tmp->next = new;
+			return (new);
+		}
+		else
+			tmp = tmp->next;
 	}
 
-	free(n_node);
 	return (NULL);
 }

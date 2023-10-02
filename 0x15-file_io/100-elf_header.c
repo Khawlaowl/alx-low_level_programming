@@ -6,9 +6,9 @@
 
 /**
  * _strncmp - compare two strings
- * @s1: the first string
- * @s2: the second string
- * @n: the max number of bytes to compare
+ * @s1: string
+ * @s2: string
+ * @n: the max number of bytes
  *
  * Return: 0 if the first n bytes of s1 and s2 are equal, otherwise non-zero
  */
@@ -30,8 +30,8 @@ int _strncmp(const char *s1, const char *s2, size_t n)
 }
 
 /**
- * _close - close a file descriptor and print an error message upon failure
- * @fd: the file descriptor to close
+ * _close - close a file
+ * @fd: the file to close
  */
 void _close(int fd)
 {
@@ -42,10 +42,10 @@ void _close(int fd)
 }
 
 /**
- * _read - read from a file and print an error message upon failure
- * @fd: the file descriptor to read from
- * @buf: the buffer to write to
- * @count: the number of bytes to read
+ * _read - read from
+ * @fd: the file
+ * @buf: the buffer
+ * @count: the nmbr
  */
 void _read(int fd, char *buf, size_t count)
 {
@@ -57,12 +57,12 @@ void _read(int fd, char *buf, size_t count)
 }
 
 /**
- * elf_magic - print ELF magic
- * @buffer: the ELF header
+ * elf_magic - print
+ * @buffer: header
  */
 void elf_magic(const unsigned char *buffer)
 {
-	unsigned int i;
+	unsigned int k;
 
 	if (_strncmp((const char *) buffer, ELFMAG, 4))
 	{
@@ -72,15 +72,15 @@ void elf_magic(const unsigned char *buffer)
 
 	printf("ELF Header:\n  Magic:   ");
 
-	for (i = 0; i < 16; ++i)
-		printf("%02x%c", buffer[i], i < 15 ? ' ' : '\n');
+	for (k = 0; k < 16; ++k)
+		printf("%02x%c", buffer[k], k < 15 ? ' ' : '\n');
 }
 
 /**
  * elf_class - print ELF class
  * @buffer: the ELF header
  *
- * Return: bit mode (32 or 64)
+ * Return: bit mode
  */
 size_t elf_class(const unsigned char *buffer)
 {
@@ -175,8 +175,8 @@ void elf_osabi(const unsigned char *buffer)
 }
 
 /**
- * elf_abivers - print ELF ABI version
- * @buffer: the ELF header
+ * elf_abivers - print
+ * @buffer: header
  */
 void elf_abivers(const unsigned char *buffer)
 {

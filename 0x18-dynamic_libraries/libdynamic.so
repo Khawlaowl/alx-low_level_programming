@@ -1,0 +1,93 @@
+#include <unistd.h>
+
+int _putchar(char c) {
+    return write(1, &c, 1);
+}
+
+int _islower(int c) {
+    // Implement _islower
+}
+
+int _isalpha(int c) {
+    // Implement _isalpha
+}
+
+int _abs(int n) {
+    // Implement _abs
+}
+
+int _isupper(int c) {
+    // Implement _isupper
+}
+
+int _isdigit(int c) {
+    // Implement _isdigit
+}
+
+int _strlen(char *s) {
+    // Implement _strlen
+}
+
+void _puts(char *s) {
+    // Implement _puts
+}
+
+char *_strcpy(char *dest, char *src) {
+    // Implement _strcpy
+    return dest;
+}
+
+int _atoi(char *s) {
+    // Implement _atoi
+    return 0;
+}
+
+char *_strcat(char *dest, char *src) {
+    // Implement _strcat
+    return dest;
+}
+
+char *_strncat(char *dest, char *src, int n) {
+    // Implement _strncat
+    return dest;
+}
+
+char *_strncpy(char *dest, char *src, int n) {
+    // Implement _strncpy
+    return dest;
+}
+
+int _strcmp(char *s1, char *s2) {
+    // Implement _strcmp
+    return 0;
+}
+
+char *_memset(char *s, char b, unsigned int n) {
+    // Implement _memset
+    return s;
+}
+
+char *_memcpy(char *dest, char *src, unsigned int n) {
+    // Implement _memcpy
+    return dest;
+}
+
+char *_strchr(char *s, char c) {
+    // Implement _strchr
+    return s;
+}
+
+unsigned int _strspn(char *s, char *accept) {
+    // Implement _strspn
+    return 0;
+}
+
+char *_strpbrk(char *s, char *accept) {
+    // Implement _strpbrk
+    return s;
+}
+
+char *_strstr(char *haystack, char *needle) {
+    // Implement _strstr
+    return haystack;
+}
